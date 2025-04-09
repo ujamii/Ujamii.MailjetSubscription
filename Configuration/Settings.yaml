@@ -1,0 +1,13 @@
+Neos:
+  Neos:
+    fusion:
+      autoInclude:
+        Ujamii.MailjetSubscription: true
+  Form:
+    presets:
+      default:
+        finisherPresets:
+          'Ujamii.MailjetSubscription:Form.MailjetSubscriptionFinisher':
+            implementationClassName: Ujamii\MailjetSubscription\Form\Finisher\MailjetSubscriptionFinisher
+          'Ujamii.MailjetSubscription:Form.MailjetCancellationFinisher':
+            implementationClassName: Ujamii\MailjetSubscription\Form\Finisher\MailjetCancellationFinisher

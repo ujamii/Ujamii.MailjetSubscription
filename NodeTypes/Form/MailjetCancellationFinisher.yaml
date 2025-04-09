@@ -1,0 +1,6 @@
+'Ujamii.MailjetSubscription:Form.MailjetCancellationFinisher':
+  superTypes:
+    'Neos.Form.Builder:AbstractFinisher': true
+  ui:
+    label: Mailjet Cancellation Finisher
+    icon: bell-slash

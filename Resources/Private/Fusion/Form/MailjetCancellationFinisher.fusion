@@ -1,0 +1,3 @@
+prototype(Ujamii.MailjetSubscription:Form.MailjetCancellationFinisher.Definition) < prototype(Neos.Form.Builder:Finisher.Definition) {
+    formElementType = 'Ujamii.MailjetSubscription:Form.MailjetCancellationFinisher'
+}
