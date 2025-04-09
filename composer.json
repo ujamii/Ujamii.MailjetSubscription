@@ -1,0 +1,18 @@
+{
+    "description": "",
+    "type": "neos-package",
+    "name": "ujamii/neos-mailjetsubscription",
+    "require": {
+        "neos/flow": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ujamii\\MailjetSubscription\\": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "Ujamii.MailjetSubscription"
+        }
+    }
+}
