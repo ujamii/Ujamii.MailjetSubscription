@@ -4,7 +4,8 @@
     "name": "ujamii/neos-mailjetsubscription",
     "require": {
         "neos/flow": "*",
-        "neos/fusion": "^8.3"
+        "neos/fusion": "^8.3",
+        "t3n/mailjet-adapter": "^0.1"
     },
     "autoload": {
         "psr-4": {
