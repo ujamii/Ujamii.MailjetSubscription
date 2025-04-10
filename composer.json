@@ -2,6 +2,7 @@
     "description": "Adds 2 new form finishers for the form builder to sub/unsub to mailjet mailing list",
     "type": "neos-package",
     "name": "ujamii/neos-mailjetsubscription",
+    "license": "GPL-3.0-or-later",
     "require": {
         "neos/flow": "*",
         "neos/fusion": "^8.3",
