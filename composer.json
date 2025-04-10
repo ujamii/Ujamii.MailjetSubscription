@@ -1,5 +1,5 @@
 {
-    "description": "",
+    "description": "Adds 2 new form finishers for the form builder to sub/unsub to mailjet mailing list",
     "type": "neos-package",
     "name": "ujamii/neos-mailjetsubscription",
     "require": {
