@@ -3,6 +3,11 @@ Neos:
     fusion:
       autoInclude:
         Ujamii.MailjetSubscription: true
+    userInterface:
+      translation:
+        autoInclude:
+          'Ujamii.MailjetSubscription': [ 'NodeTypes/*' ]
+
   Form:
     presets:
       default:
