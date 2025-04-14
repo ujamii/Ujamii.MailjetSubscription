@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file original="" product-name="Ujamii.Site" source-language="en" target-language="de" datatype="plaintext">
+        <body>
+            <trans-unit id="label">
+                <source>Mailjet Subscription Finisher</source>
+                <target xml:lang="de" state="translated">Mailjet Anmeldung-Finisher</target>
+            </trans-unit>
+            <trans-unit id="properties.lists">
+                <source>Mailjet lists</source>
+                <target xml:lang="de" state="translated">Mailjet Liste auswählen</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
