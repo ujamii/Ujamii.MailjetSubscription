@@ -7,10 +7,18 @@ Neos:
       translation:
         autoInclude:
           'Ujamii.MailjetSubscription': [ 'NodeTypes/*' ]
+  Fusion:
+    defaultContext:
+      'Ujamii.MailjetSubscription.MailjetHelper': 'Ujamii\MailjetSubscription\Eel\MailjetHelper'
 
   Form:
     presets:
       default:
+        formElementTypes:
+          'Ujamii.MailjetSubscription:Form.MailjetListSelector':
+            superTypes:
+              'Neos.Form:FormElement': true
+
         finisherPresets:
           'Ujamii.MailjetSubscription:Form.MailjetSubscriptionFinisher':
             implementationClassName: Ujamii\MailjetSubscription\Form\Finisher\MailjetSubscriptionFinisher

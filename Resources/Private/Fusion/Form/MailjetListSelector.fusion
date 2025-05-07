@@ -1,0 +1,39 @@
+prototype(Ujamii.MailjetSubscription:Form.MailjetListSelector.Definition) < prototype(Neos.Form.Builder:FormElement.Definition) {
+    formElementType = 'Ujamii.MailjetSubscription:Form.MailjetListSelector'
+    properties {
+        lists = ${null}
+    }
+}
+
+prototype(Ujamii.MailjetSubscription:Form.MailjetListSelector) < prototype(Neos.Form.FusionRenderer:FormElement) {
+    label = Neos.Fusion:Tag {
+        tagName = 'span'
+        content = ${Neos.Form.FusionRenderer.translateAndEscapeProperty(element, 'label')}
+    }
+    fieldContainer {
+        field {
+            content = Neos.Fusion:Loop {
+                items = ${element.properties.lists}
+                itemName = 'list'
+                itemRenderer = Neos.Fusion:Tag {
+                    tagName = 'label'
+
+                    content = Neos.Fusion:Join {
+                        field = Neos.Form.FusionRenderer:FormElementField {
+                            tagName = 'input'
+                            attributes {
+                                type = 'checkbox'
+                                name = ${elementName  + '[]'}
+                                value = ${list}
+                            }
+                        }
+                        label = Neos.Fusion:Tag {
+                            tagName = 'span'
+                            content = ${Ujamii.MailjetSubscription.MailjetHelper.getListName(list)}
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

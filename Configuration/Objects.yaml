@@ -4,3 +4,10 @@ Ujamii\MailjetSubscription\DataSource\MailJetListDataSource:
       object:
         factoryObjectName: t3n\MailJetAdapter\Factory\MailJetFactory
         factoryMethodName: createClient
+
+Ujamii\MailjetSubscription\Eel\MailjetHelper:
+  properties:
+    mailjetClient:
+      object:
+        factoryObjectName: t3n\MailJetAdapter\Factory\MailJetFactory
+        factoryMethodName: createClient

@@ -35,28 +35,23 @@ This package provides:
 
 1. **MailjetSubscribeFinisher**: Adds a contact to one or more Mailjet mailing list
 2. **MailjetUnsubscribeFinisher**: Removes a contact from one or more Mailjet mailing list
+3. **MailjetListSelector**: A new form element which shows a set of lists to subscribe to/unsubscribe from.
 
 ## Usage
 
 ### Form Builder Integration
 
-After installing the package, the new finishers will be available in the Form Builder in the Neos backend.
+After installing the package, the two new finishers will be available in the Form Builder in the Neos backend as well as a new form
+type for the Mailjet ContactLists the user wants to sub/unsubscribe. Backend editors have to chose from all available lists which
+ones should be shown in frontend. The form field always has the name `lists`.
 
 #### Subscribe Finisher Configuration
 
-When adding the MailjetSubscribeFinisher to your form, you can configure:
-
-- **List ID**: The Mailjet list ID(s) to subscribe the contact to
-
-The Finisher expects 3 field ids to be in the form: `firstname`, `lastname` and `email`
+The Finisher expects 2 field ids to be in the form: `email` and `lists`.
 
 #### Unsubscribe Finisher Configuration
 
-When adding the MailjetUnsubscribeFinisher to your form, you can configure:
-
-- **List ID**: The Mailjet list ID(s) to unsubscribe the contact from
-
-The Finisher expects 1 field id to be in the form: `email`
+The Finisher expects 2 field ids to be in the form: `email` and `lists`.
 
 ## DataSource for List Selection
 
