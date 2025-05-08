@@ -7,7 +7,7 @@ prototype(Ujamii.MailjetSubscription:Form.MailjetListSelector.Definition) < prot
 
 prototype(Ujamii.MailjetSubscription:Form.MailjetListSelector) < prototype(Neos.Form.FusionRenderer:FormElement) {
     label = Neos.Fusion:Tag {
-        tagName = 'span'
+        tagName = 'div'
         content = ${Neos.Form.FusionRenderer.translateAndEscapeProperty(element, 'label')}
     }
     fieldContainer {

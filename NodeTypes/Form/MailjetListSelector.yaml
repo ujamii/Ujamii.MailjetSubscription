@@ -6,6 +6,7 @@
     'Neos.Form.Builder:RequiredCheckboxMixin': false
   ui:
     label: i18n
+    icon: list
 
   properties:
     identifier:
@@ -24,5 +25,5 @@
           editor: Neos.Neos/Inspector/Editors/SelectBoxEditor
           editorOptions:
             allowEmpty: true
-            placeholder: 'Select Mailjet lists to show'
+            placeholder: i18n
             dataSourceIdentifier: 'ujamii-mailjet-subscription-list'

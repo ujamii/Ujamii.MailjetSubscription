@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file original="" product-name="Ujamii.MailjetSubscription" source-language="en" datatype="plaintext">
+        <body>
+            <trans-unit id="ui.label">
+                <source>Mailjet list selection</source>
+            </trans-unit>
+            <trans-unit id="properties.lists">
+                <source>Mailjet lists</source>
+            </trans-unit>
+            <trans-unit id="properties.lists.selectBoxEditor.placeholder">
+                <source>Select Mailjet lists to show</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
