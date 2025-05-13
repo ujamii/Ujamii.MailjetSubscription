@@ -9,6 +9,8 @@ use Mailjet\Client;
 
 class MailjetHelper implements ProtectedContextAwareInterface
 {
+    private const int MAILJET_CONNECTION_TIMEOUT = 10;
+
     /**
      * @var Client
      */
@@ -19,6 +21,7 @@ class MailjetHelper implements ProtectedContextAwareInterface
     public function getListName(int $listId): string
     {
         $lists = [];
+        $this->mailjetClient->setConnectionTimeout(self::MAILJET_CONNECTION_TIMEOUT);
         $response = $this->mailjetClient->get(Resources::$Contactslist, ['filters' => ['IsDeleted' => false, 'Limit' => 100, 'Sort' => 'Name']]);
 
         if (true === $response->success()) {
